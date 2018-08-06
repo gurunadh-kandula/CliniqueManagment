@@ -1,0 +1,11 @@
+[ {
+  "specialization" : "PM",
+  "availability" : null,
+  "doctorId" : "1",
+  "doctorName" : "vamshi"
+}, {
+  "specialization" : "AM",
+  "availability" : null,
+  "doctorId" : "2",
+  "doctorName" : "guru"
+} ]

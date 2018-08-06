@@ -26,4 +26,10 @@ public class Utility {
 
 	}
 
+	public long inputLong() {
+		long input = scaninput.nextLong();
+		return input;
+
+	}
+
 }

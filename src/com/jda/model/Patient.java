@@ -5,7 +5,7 @@ public class Patient {
 	String id;
 	long mobilenumber;
 	int age;
-    public int appointments[]={5,5,5,5,5,5,5,5};
+   
     public String getPatientName() {
 		return patientname;
 
@@ -41,7 +41,7 @@ public class Patient {
 	}
 	@Override
 	public String toString() {
-		return "\n{ \"patient Name\" : " + patientname + "\n\"patient Id\"  : " + id + "\n\"mobilenumber\" : " + mobilenumber+ "\n\"age\" : "
+		return "\n{ \"patientname\" : " + patientname + "\n\"patientid\"  : " + id + "\n\"mobilenumber\" : " + mobilenumber+ "\n\"age\" : "
 				+ age + "}";
 	}
 }

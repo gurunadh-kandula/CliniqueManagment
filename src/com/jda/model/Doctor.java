@@ -6,6 +6,7 @@ public class Doctor {
 	String id;
 	String specialization;
 	String availability;
+	//public int appointments[] = { 5, 5, 5, 5, 5, 5, 5 };
 
 	public String getDoctorName() {
 		return doctorname;
@@ -31,21 +32,20 @@ public class Doctor {
 	public void setSpecialization(String specialization) {
 		this.specialization = specialization;
 	}
-	public String getAvailability()
-	{
+
+	public String getAvailability() {
 		return availability;
 	}
-	public void setAvailability(String availability)
-	{
-		this.availability=availability;
-		
+
+	public void setAvailability(String availability) {
+		this.availability = availability;
+
 	}
+
 	@Override
 	public String toString() {
-		return "\n{ \"doctor Name\" : " + doctorname + "\n\"doctor Id\"  : " + id + "\n\"specialization\" : " + specialization+ "\n\"availabilty\" : "
-				+ availability + "}";
+		return "\n{ \"doctor Name\" : " + doctorname + "\n\"doctor Id\"  : " + id + "\n\"specialization\" : "
+				+ specialization + "\n\"availabilty\" : " + availability + "}";
 	}
-
-
 
 }

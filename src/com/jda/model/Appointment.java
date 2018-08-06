@@ -7,6 +7,14 @@ public class Appointment {
 	String time;
 	String date;
 
+	public Appointment(String doctorid, String specialization, String patientid, String time, String date) {
+		this.doctorid = doctorid;
+		this.specialization = specialization;
+		this.patientid = patientid;
+		this.time = time;
+		this.date = date;
+	}
+
 	public String getDoctorId() {
 		return doctorid;
 	}
@@ -26,9 +34,11 @@ public class Appointment {
 	public String getPatientId() {
 		return patientid;
 	}
+
 	public void setPatientId(String patientid) {
-		this.patientid=patientid;
+		this.patientid = patientid;
 	}
+
 	public String getTime() {
 		return time;
 	}
@@ -46,9 +56,10 @@ public class Appointment {
 		this.date = date;
 
 	}
+
 	@Override
 	public String toString() {
-		return "\n{ \"doctor Id\" : " + doctorid + "\n\"specialization\"  : " + specialization+"\n\"patient Id\"  : " + patientid + "\n\"Time\" : " + time+ "\n\"Date\" : "
-				+ date + "}";
+		return "\n{ \"doctor Id\" : " + doctorid + "\n\"specialization\"  : " + specialization + "\n\"patient Id\"  : "
+				+ patientid + "\n\"Time\" : " + time + "\n\"Date\" : " + date + "}";
 	}
 }
