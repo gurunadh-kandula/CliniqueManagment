@@ -35,10 +35,10 @@ public class DoctorService {
 
 	}
 
-	public ArrayList<Doctor> add(String filename) throws JsonGenerationException, JsonMappingException, IOException {
+	public void add(String filename) throws JsonGenerationException, JsonMappingException, IOException {
+		read(filename);
 		list.add(createUser());
 		save(filename);
-		return list;
 
 	}
 
@@ -74,16 +74,16 @@ public class DoctorService {
 	}
 
 	public void save(String filename) throws JsonGenerationException, JsonMappingException, IOException {
-		mapper.writerWithDefaultPrettyPrinter().writeValue(
-				new File("C:\\Users\\1023404\\eclipse-workspace\\CliniqueManagementProgramme\\files\\" + filename + ".json"),
+		mapper.writerWithDefaultPrettyPrinter().writeValue(new File(
+				"C:\\Users\\1023404\\eclipse-workspace\\CliniqueManagementProgramme\\files\\" + filename + ".json"),
 				list);
 		System.out.println(".....Doctors data Saved....");
 	}
 
 	public void read(String filename) throws JsonParseException, JsonMappingException, IOException {
 
-		list = mapper.readValue(
-				new File("C:\\Users\\1023404\\eclipse-workspace\\CliniqueManagementProgramme\\files\\" + filename + ".json"),
+		list = mapper.readValue(new File(
+				"C:\\Users\\1023404\\eclipse-workspace\\CliniqueManagementProgramme\\files\\" + filename + ".json"),
 				new TypeReference<ArrayList<Doctor>>() {
 				});
 

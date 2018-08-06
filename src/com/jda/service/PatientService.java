@@ -31,11 +31,11 @@ public class PatientService {
 		return patient;
 	}
 
-	public ArrayList<Patient> add(String filename) throws JsonGenerationException, JsonMappingException, IOException {
+	public  void add(String filename) throws JsonGenerationException, JsonMappingException, IOException {
+		read(filename);
 		list.add(createUser());
 		save(filename);
-		return list;
-
+		
 	}
 
 	public void remove(String filename) throws JsonGenerationException, JsonMappingException, IOException {

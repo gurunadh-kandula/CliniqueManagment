@@ -8,4 +8,14 @@
   "doctorId" : "2",
   "availability" : "AM",
   "specialization" : "ENT"
+}, {
+  "doctorName" : "sash",
+  "doctorId" : "1",
+  "availability" : "PM",
+  "specialization" : "neurology"
+}, {
+  "doctorName" : "hamsa",
+  "doctorId" : "1",
+  "availability" : "PM",
+  "specialization" : "gyno"
 } ]

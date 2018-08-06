@@ -41,6 +41,7 @@ public class AppointmentAlloter {
 	}
 
 	public void add(String filename) throws JsonGenerationException, JsonMappingException, IOException {
+		read(filename);
 		list.add(createAppointment());
 		save(filename);
 

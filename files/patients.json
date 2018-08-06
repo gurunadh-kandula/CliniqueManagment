@@ -8,4 +8,9 @@
   "patientId" : "2",
   "mobileNumber" : 567432,
   "age" : 22
+}, {
+  "patientName" : "pooja",
+  "patientId" : "1",
+  "mobileNumber" : 8309875463,
+  "age" : 25
 } ]

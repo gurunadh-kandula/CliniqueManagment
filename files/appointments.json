@@ -4,4 +4,10 @@
   "date" : "21",
   "patientId" : "1",
   "doctorId" : "2"
+}, {
+  "specialiazation" : "nephrology",
+  "time" : "PM",
+  "date" : "21",
+  "patientId" : "2",
+  "doctorId" : "1"
 } ]
