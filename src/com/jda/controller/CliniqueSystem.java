@@ -78,7 +78,8 @@ public class CliniqueSystem {
 				} while (select != 0);
 				break;
 			case 3:
-				appointmentalloter = new AppointmentAlloter(doctorsfile, patientsfile);
+				appointmentalloter = new AppointmentAlloter();
+				appointmentalloter.load(doctorsfile, patientsfile);
 				do {
 					System.out.println(
 							"1.Make an appointment 2.PRINT Appointments 3.PRINT Doctor-Patient Report 4.CLOSE appointment section");

@@ -1,34 +1,34 @@
 package com.jda.model;
 
 public class Patient {
-	String patientname;
-	String id;
-	long mobilenumber;
+	String patientName;
+	String patientId;
+	long mobileNumber;
 	int age;
    
     public String getPatientName() {
-		return patientname;
+		return patientName;
 
 	}
 
-	public void setPatientName(String patientname) {
-		this.patientname = patientname;
+	public void setPatientName(String patientName) {
+		this.patientName = patientName;
 	}
 
 	public String getPatientId() {
-		return id;
+		return patientId;
 	}
 
-	public void setPatientId(String id) {
-		this.id = id;
+	public void setPatientId(String patientId) {
+		this.patientId = patientId;
 	}
 
 	public long getMobileNumber() {
-		return mobilenumber;
+		return mobileNumber;
 	}
 
-	public void setMoblieNumber(long mobilenumber) {
-		this.mobilenumber = mobilenumber;
+	public void setMoblieNumber(long mobileNumber) {
+		this.mobileNumber = mobileNumber;
 	}
 
 	public int getAge() {
@@ -41,7 +41,7 @@ public class Patient {
 	}
 	@Override
 	public String toString() {
-		return "\n{ \"patientname\" : " + patientname + "\n\"patientid\"  : " + id + "\n\"mobilenumber\" : " + mobilenumber+ "\n\"age\" : "
+		return "\n{ \"patientName\" : " + patientName + "\n\"patientId\"  : " + patientId + "\n\"mobileNumber\" : " + mobileNumber+ "\n\"age\" : "
 				+ age + "}";
 	}
 }

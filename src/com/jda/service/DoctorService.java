@@ -26,10 +26,10 @@ public class DoctorService {
 
 		doctor.setDoctorName(utility.inputstring());
 		doctor.setDoctorId(Integer.toString(id));
-		System.out.println("Enter" + doctor.getDoctorName() + "'s specialization");
+		System.out.println("Enter  " + doctor.getDoctorName() + "'s specialization");
 		doctor.setSpecialization(utility.inputstring());
-		System.out.println("Enter" + doctor.getDoctorName() + "availability");
-		doctor.setSpecialization(utility.inputstring());
+		System.out.println("Enter  " + doctor.getDoctorName() + "'s availability");
+		doctor.setAvailability(utility.inputstring());
 		id++;
 		return doctor;
 

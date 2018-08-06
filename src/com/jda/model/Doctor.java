@@ -2,35 +2,35 @@ package com.jda.model;
 
 public class Doctor {
 
-	String doctorname;
-	String id;
-	String specialization;
+	String doctorName;
+	String doctorId;
+	String specialiazation;
 	String availability;
 	//public int appointments[] = { 5, 5, 5, 5, 5, 5, 5 };
 
 	public String getDoctorName() {
-		return doctorname;
+		return doctorName;
 	}
 
 	public void setDoctorName(String doctorname) {
-		this.doctorname = doctorname;
+		this.doctorName = doctorname;
 	}
 
 	public String getDoctorId() {
-		return id;
+		return doctorId;
 
 	}
 
 	public void setDoctorId(String id) {
-		this.id = id;
+		this.doctorId = id;
 	}
 
 	public String getSpecialization() {
-		return specialization;
+		return specialiazation;
 	}
 
 	public void setSpecialization(String specialization) {
-		this.specialization = specialization;
+		this.specialiazation = specialization;
 	}
 
 	public String getAvailability() {
@@ -44,8 +44,8 @@ public class Doctor {
 
 	@Override
 	public String toString() {
-		return "\n{ \"doctor Name\" : " + doctorname + "\n\"doctor Id\"  : " + id + "\n\"specialization\" : "
-				+ specialization + "\n\"availabilty\" : " + availability + "}";
+		return "\n{ \"doctorname\" : " + doctorName + "\n\"doctorId\"  : " +doctorId + "\n\"specialiazation\" : "
+				+ specialiazation + "\n\"availabilty\" : " + availability + "}";
 	}
 
 }

@@ -2,18 +2,20 @@ package com.jda.model;
 
 public class Appointment {
 	String doctorid;
-	String specialization;
+	String specialiazation;
 	String patientid;
 	String time;
 	String date;
 
-	public Appointment(String doctorid, String specialization, String patientid, String time, String date) {
+	public Appointment(String doctorid, String specialiazation, String patientid, String time, String date) {
 		this.doctorid = doctorid;
-		this.specialization = specialization;
+		this.specialiazation = specialiazation;
 		this.patientid = patientid;
 		this.time = time;
 		this.date = date;
 	}
+	public Appointment()
+	{}
 
 	public String getDoctorId() {
 		return doctorid;
@@ -24,11 +26,11 @@ public class Appointment {
 	}
 
 	public String getSpecialiazation() {
-		return specialization;
+		return specialiazation;
 	}
 
-	public void setSpecialization(String specialization) {
-		this.specialization = specialization;
+	public void setSpecialization(String specialiazation) {
+		this.specialiazation = specialiazation;
 	}
 
 	public String getPatientId() {
@@ -59,7 +61,7 @@ public class Appointment {
 
 	@Override
 	public String toString() {
-		return "\n{ \"doctor Id\" : " + doctorid + "\n\"specialization\"  : " + specialization + "\n\"patient Id\"  : "
+		return "\n{ \"doctor Id\" : " + doctorid + "\n\"specialiazation\"  : " + specialiazation + "\n\"patient Id\"  : "
 				+ patientid + "\n\"Time\" : " + time + "\n\"Date\" : " + date + "}";
 	}
 }

@@ -1,11 +1,11 @@
 [ {
-  "specialization" : "PM",
-  "availability" : null,
+  "doctorName" : "tej",
   "doctorId" : "1",
-  "doctorName" : "vamshi"
+  "availability" : "PM",
+  "specialization" : "nephrology"
 }, {
-  "specialization" : "AM",
-  "availability" : null,
+  "doctorName" : "guru",
   "doctorId" : "2",
-  "doctorName" : "guru"
+  "availability" : "AM",
+  "specialization" : "ENT"
 } ]

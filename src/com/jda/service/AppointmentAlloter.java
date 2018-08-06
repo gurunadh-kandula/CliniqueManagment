@@ -19,12 +19,10 @@ public class AppointmentAlloter {
 	ObjectMapper mapper = new ObjectMapper();
 	public static ArrayList<Appointment> list = new ArrayList<Appointment>();
 
-	public AppointmentAlloter(String drfilename, String Pfilename)
-			throws JsonParseException, JsonMappingException, IOException {
+	public void load(String drfilename, String Pfilename) throws JsonParseException, JsonMappingException, IOException {
 		patientservice.read(Pfilename);
 		doctorservice.read(drfilename);
 	}
-	
 
 	public Appointment createAppointment() {
 		System.out.println("Enter the patient id");
@@ -50,7 +48,7 @@ public class AppointmentAlloter {
 
 	public void print(String filename) throws JsonParseException, JsonMappingException, IOException {
 		File newFile = new File(
-				"C:\\Users\\1023404\\eclipse-workspace\\CliniqueManagementProgramme" + filename + ".json");
+				"C:\\Users\\1023404\\eclipse-workspace\\CliniqueManagementProgramme\\files\\" + filename + ".json");
 		if (newFile.length() == 0)
 			System.out.println("File is empty");
 		else {
@@ -64,7 +62,7 @@ public class AppointmentAlloter {
 	public void read(String filename) throws JsonParseException, JsonMappingException, IOException {
 
 		list = mapper.readValue(
-				new File("C:\\Users\\1023404\\eclipse-workspace\\CliniqueManagementProgramme" + filename + ".json"),
+				new File("C:\\Users\\1023404\\eclipse-workspace\\CliniqueManagementProgramme\\files\\" + filename + ".json"),
 				new TypeReference<ArrayList<Appointment>>() {
 				});
 
@@ -72,16 +70,16 @@ public class AppointmentAlloter {
 
 	public void save(String filename) throws JsonGenerationException, JsonMappingException, IOException {
 		mapper.writerWithDefaultPrettyPrinter().writeValue(
-				new File("C:\\Users\\1023404\\eclipse-workspace\\CliniqueManagementProgramme" + filename + ".json"),
+				new File("C:\\Users\\1023404\\eclipse-workspace\\CliniqueManagementProgramme\\files\\" + filename + ".json"),
 				list);
 		System.out.println(".....Appointments data Saved....");
 	}
 
-	public void DrPatientReport(String Pid,String Did) {
+	public void DrPatientReport(String Pid, String Did) {
 		for (Appointment A : list) {
 			if (Pid.equals(A.getPatientId())) {
-                  if(Did.equals(A.getDoctorId()))
-				System.out.println(A);
+				if (Did.equals(A.getDoctorId()))
+					System.out.println(A);
 			}
 
 		}

@@ -23,9 +23,9 @@ public class PatientService {
 		System.out.println("Enter patient name");
 		patient.setPatientName(utility.inputstring());
 		patient.setPatientId(Integer.toString(id));
-		System.out.println("Enter" + patient.getPatientName() + "mobile number");
+		System.out.println("Enter   " + patient.getPatientName() + "   mobile number");
 		patient.setMoblieNumber(utility.inputLong());
-		System.out.println("Enter" + patient.getPatientName() + "age");
+		System.out.println("Enter  " + patient.getPatientName() + "  age");
 		patient.setAge(utility.inputInteger());
 		id++;
 		return patient;
